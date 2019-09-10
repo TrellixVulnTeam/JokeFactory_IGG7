@@ -1,8 +1,10 @@
 import pyfiglet as pyf
 import requests as rq
+import termcolor as tc
 
 def initial_message(msg):
     heading = pyf.figlet_format(msg)
+    heading = tc.colored(heading, color="magenta")
     print(heading)
     #print ('')
 
